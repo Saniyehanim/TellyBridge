@@ -1,0 +1,17 @@
+{
+  "name": "Minecraft Forge 1.8.9 Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:8",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/gradle:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "richardwillis.vscode-gradle"
+      ]
+    }
+  },
+  "postCreateCommand": "./gradlew build || true"
+}
